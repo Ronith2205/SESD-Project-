@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Tracker - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Finance Tracker</h1>
+    <div id="form-container">
+      <div id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="loginUser" placeholder="Username" required>
+        <input type="password" id="loginPass" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p>Don’t have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+      </div>
+
+      <div id="signupForm" style="display:none;">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupUser" placeholder="Create Username" required>
+        <input type="password" id="signupPass" placeholder="Create Password" required>
+        <button onclick="signup()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
